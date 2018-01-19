@@ -14,6 +14,7 @@ public class HourlyRewardCmd {
             return;
         }
         if(arg.equalsIgnoreCase("reload")) {
+            if(cs.hasPermission("hourlyreward.reload"))
             HourlyReward.getInstance().getHRConfig().reloadConfig();
             Messenger.sendMessage(cs, "&aConfiguration have been successfully reloaded!");
         }

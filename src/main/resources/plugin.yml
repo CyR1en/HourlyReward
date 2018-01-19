@@ -4,3 +4,8 @@ author: CyRien
 description: Reward your players for each our hour they spend playing.
 
 main: us.cyrien.hr.HourlyReward
+
+permission:
+    hourlyreward.reload:
+        description: Reload HourlyReward's configuration.
+        default: op
