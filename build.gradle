@@ -1,0 +1,30 @@
+plugins {
+    id'java'
+    id'application'
+    id'com.github.johnrengelman.shadow' version '2.0.1'
+}
+
+mainClassName = 'us.cyrien.hr.HourlyReward'
+
+version '1.0'
+
+sourceCompatibility = 1.8
+
+repositories {
+    jcenter()
+    mavenLocal()
+    maven {
+        url 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/'
+    }
+}
+
+dependencies {
+    compileOnly 'org.bukkit:bukkit:1.12.2-R0.1-SNAPSHOT'
+}
+
+shadowJar {
+    classifier = 'Shaded'
+    relocate('us.cyrien.mcutils', 'hr.mcutils')
+}
+
+compileJava.options.encoding = 'UTF-8'

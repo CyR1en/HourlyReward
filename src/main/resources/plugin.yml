@@ -1,0 +1,6 @@
+name: HourlyReward
+version: 1.0.0
+author: CyRien
+description: Reward your players for each our hour they spend playing.
+
+main: us.cyrien.hr.HourlyReward
