@@ -25,6 +25,7 @@ public class TimeTask extends BukkitRunnable {
             if(total >= 3600 ) {
                 PlayerRewardEvent onReward = new PlayerRewardEvent(p);
                 Bukkit.getPluginManager().callEvent(onReward);
+
             }
         }
     }

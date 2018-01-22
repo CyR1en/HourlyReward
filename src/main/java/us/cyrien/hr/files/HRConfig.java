@@ -25,5 +25,12 @@ public class HRConfig extends BaseConfig {
             config.set("Reward_Message", "Congrats! You have been rewarded!", commentArr);
             config.saveConfig();
         }
+        if(config.get("Message_Prefix") == null) {
+            commentArr = new String[]{"Prefix that will appear",
+                    "in front of each HourlyReward",
+                    "messages.", "Leave a space at the end."};
+            config.set("Message_Prefix", "&6[&3HourlyReward&6]&r ", commentArr);
+            config.saveConfig();
+        }
     }
 }
